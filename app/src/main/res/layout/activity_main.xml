@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- ✅ HEADER "Hello World!" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, World! 🌍"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="8dp"
+            android:letterSpacing="0.05"
+            android:shadowColor="#80B0FF"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="8" />
+
+        <!-- ✅ Subtitle kecil di bawah Hello World -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat datang di kartu profilku ✨"
+            android:textSize="13sp"
+            android:textColor="#7986CB"
+            android:layout_marginBottom="28dp" />
+
+        <!-- ✅ Foto Profil dengan border -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profil"
+            android:background="@drawable/circle_bg"
+            android:scaleType="centerCrop"
+            android:contentDescription="Foto Profil"
+            android:elevation="8dp" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvNim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nim"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/tvJurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/major"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginTop="4dp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnSapa"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="👋 Sapa Saya!"
+            android:textSize="16sp"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="🔄 Reset"
+            android:textSize="14sp"
+            android:backgroundTint="#9E9E9E"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Halo! Selamat datang 😊"
+            android:textSize="16sp"
+            android:textColor="#1A237E"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</ScrollView>
